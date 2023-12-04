@@ -3,11 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import ReduxT from './lib/ReduxT'
 import { Tchildren } from './Layout/app/Types'
 
-type ProviderContainerProps =  {
-    children:Tchildren
-
-}
-function ProviderContainer({children}:ProviderContainerProps) {
+function ProviderContainer({children}:Tchildren) {
   return (
  <BrowserRouter basename='/'>
         {/* <ReduxT> */}

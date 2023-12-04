@@ -5,7 +5,7 @@ export const  BaseURL = "https://64df594871c3335b25827869.mockapi.io/"
 export  const Currency = "$";
 
 
-
+//// rm -rf .git
 export const convert_data_to_select = (array = []) => {
     if (typeof array === 'undefined' || !Array.isArray(array)) {
       throw new Error("Expected an array argument")
