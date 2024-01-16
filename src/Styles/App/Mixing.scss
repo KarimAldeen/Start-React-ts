@@ -96,3 +96,24 @@
     transform: skewX(10deg) skewY(-10deg);
   }
 }
+
+
+@mixin  Scrollbar($color) {
+  scroll-behavior: smooth;
+  scroll-padding:10rem ;
+  &::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: $color;
+      border-radius: 3px; /* Adjust border-radius as needed */
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: transparent; /* Set to desired background color */
+    }
+  
+    }
