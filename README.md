@@ -34,11 +34,11 @@
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/KarimAldeen/test_scandinaviatech.git
+    git clone https://github.com/KarimAldeen/Start-React-ts.git
     ```
     
     ```bash
-    cd test_scandinaviatech
+    cd Start-React-ts
     ```
 
 2. Install dependencies:
