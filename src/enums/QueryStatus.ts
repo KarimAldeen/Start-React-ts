@@ -5,3 +5,4 @@ export enum QueryStatusEnum  {
     ERROR ="error",
     SUCCESS="success"
 }
+

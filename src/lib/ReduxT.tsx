@@ -1,6 +1,6 @@
 import { store } from '../Redux/store'
 import { Provider } from 'react-redux'
-import { Tchildren } from '../Layout/app/Types'
+import { Tchildren } from '../types/App'
 
 function ReduxT({ children }: Tchildren) {
   return (

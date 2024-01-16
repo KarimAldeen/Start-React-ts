@@ -3,7 +3,7 @@ import { Formik, Form, Field } from 'formik';
 import Translate from '../../Components/Utils/Translate';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { TOKEN_KEY } from '../../config/AppKey';
+import { AppKeyEnum } from "../../enums/AppKey";
 
 
 const LoginForm = () => {
@@ -15,7 +15,7 @@ const LoginForm = () => {
   const handelSubmit = (values:any)=>{
 
     // Implemnt Your Auth Code 
-    localStorage.setItem(TOKEN_KEY, "fake")
+    localStorage.setItem(AppKeyEnum?.TOKEN_KEY, "fake")
     navigate('/', { replace: true })
   }
   return (
