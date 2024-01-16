@@ -4,7 +4,7 @@ import { Button, Dropdown, Space } from 'antd';
 import { useChangeLanguage } from '../../Hooks/useChangeLanguage';
 import { useTranslation } from 'react-i18next'
 const Translate: React.FC = () => {
-  const { currentlanguage, changelanguage } = useChangeLanguage();
+  const { currentLanguage, changeLanguage } = useChangeLanguage();
   const { t } = useTranslation();
 
   const EnLanguage = memo(() => (
@@ -23,12 +23,12 @@ const Translate: React.FC = () => {
 
   
   const EnLanguageClickHandler = React.useCallback(() => {
-    changelanguage('en');
-  }, [changelanguage]);
+    changeLanguage('en');
+  }, [changeLanguage]);
   
   const ArLanguageClickHandler = React.useCallback(() => {
-    changelanguage('ar');
-  }, [changelanguage]);
+    changeLanguage('ar');
+  }, [changeLanguage]);
   
   const items: MenuProps['items'] = [
     {
@@ -44,7 +44,7 @@ const Translate: React.FC = () => {
   return (
     <Space direction="vertical">
       <Dropdown menu={{ items }} placement="top">
-        <Button disabled>{currentlanguage === 'en' ? <EnLanguage /> : <ArLanguage />}</Button>
+        <Button disabled>{currentLanguage === 'en' ? <EnLanguage /> : <ArLanguage />}</Button>
       </Dropdown>
     </Space>
   );
